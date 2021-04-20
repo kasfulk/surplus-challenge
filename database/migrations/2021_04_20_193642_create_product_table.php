@@ -17,7 +17,7 @@ class CreateProductTable extends Migration
             $table->integer('id')->primary();
             $table->string('name')->nullable();
             $table->string('description')->nullable();
-            $table->boolean('enable')->default(1)->change();
+            $table->integer('enable');
             $table->timestamps();
         });
     }

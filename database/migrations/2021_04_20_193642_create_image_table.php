@@ -17,7 +17,7 @@ class CreateImageTable extends Migration
             $table->integer('id')->primary();
             $table->string('name')->nullable();
             $table->string('file')->nullable();
-            $table->boolean('enable')->default(1)->change();
+            $table->integer('enable');
             $table->timestamps();
         });
     }
