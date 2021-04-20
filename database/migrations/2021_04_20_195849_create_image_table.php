@@ -14,7 +14,7 @@ class CreateImageTable extends Migration
     public function up()
     {
         Schema::create('image', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->integer('id', true);
             $table->string('name')->nullable();
             $table->string('file')->nullable();
             $table->integer('enable');
